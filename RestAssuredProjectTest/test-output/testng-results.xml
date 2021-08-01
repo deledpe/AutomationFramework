@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6340" started-at="2021-08-01T08:16:01Z" finished-at="2021-08-01T08:16:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6340" started-at="2021-08-01T08:16:01Z" finished-at="2021-08-01T08:16:07Z">
+      <class name="BDDAutomationAPI.TC2001_Full_Coverage_METHOD">
+        <test-method status="PASS" signature="CreateUserPost()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="CreateUserPost" duration-ms="4131" started-at="2021-08-01T09:16:01Z" finished-at="2021-08-01T09:16:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUserPost -->
+        <test-method status="PASS" signature="TC001_GET_SingleUser()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="TC001_GET_SingleUser" duration-ms="1539" started-at="2021-08-01T09:16:05Z" finished-at="2021-08-01T09:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_GET_SingleUser -->
+        <test-method status="PASS" signature="UpdateUser1Patch()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="UpdateUser1Patch" duration-ms="259" started-at="2021-08-01T09:16:06Z" finished-at="2021-08-01T09:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser1Patch -->
+        <test-method status="PASS" signature="UpdateUserPut()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="UpdateUserPut" duration-ms="191" started-at="2021-08-01T09:16:06Z" finished-at="2021-08-01T09:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUserPut -->
+        <test-method status="PASS" signature="deleteUser()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="deleteUser" duration-ms="162" started-at="2021-08-01T09:16:07Z" finished-at="2021-08-01T09:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- BDDAutomationAPI.TC2001_Full_Coverage_METHOD -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
