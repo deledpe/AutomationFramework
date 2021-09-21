@@ -13,6 +13,7 @@ public class CreatePOSTOptions {
 		map.put("name", "Leet stroy");
 		map.put("Job", "Accounttant");
 		
+//		System.out.println(map);
 		System.out.println(map);
 		
 		

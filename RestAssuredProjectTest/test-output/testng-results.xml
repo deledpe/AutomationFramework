@@ -1,33 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6340" started-at="2021-08-01T08:16:01Z" finished-at="2021-08-01T08:16:07Z">
+  <suite started-at="2021-09-21T13:44:26 BST" name="Default suite" finished-at="2021-09-21T13:44:32 BST" duration-ms="6022">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6340" started-at="2021-08-01T08:16:01Z" finished-at="2021-08-01T08:16:07Z">
-      <class name="BDDAutomationAPI.TC2001_Full_Coverage_METHOD">
-        <test-method status="PASS" signature="CreateUserPost()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="CreateUserPost" duration-ms="4131" started-at="2021-08-01T09:16:01Z" finished-at="2021-08-01T09:16:05Z">
+    <test started-at="2021-09-21T13:44:26 BST" name="Default test" finished-at="2021-09-21T13:44:32 BST" duration-ms="6022">
+      <class name="demo.DataDrivenAPIExample">
+        <test-method signature="dataDrivenPost(java.lang.String, java.lang.String)[pri:0, instance:demo.DataDrivenAPIExample@101952da]" started-at="2021-09-21T13:44:27 BST" name="dataDrivenPost" data-provider="DataForPost" finished-at="2021-09-21T13:44:32 BST" duration-ms="5110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kenny1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Engineer]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateUserPost -->
-        <test-method status="PASS" signature="TC001_GET_SingleUser()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="TC001_GET_SingleUser" duration-ms="1539" started-at="2021-08-01T09:16:05Z" finished-at="2021-08-01T09:16:06Z">
+        </test-method> <!-- dataDrivenPost -->
+        <test-method signature="dataDrivenPost(java.lang.String, java.lang.String)[pri:0, instance:demo.DataDrivenAPIExample@101952da]" started-at="2021-09-21T13:44:32 BST" name="dataDrivenPost" data-provider="DataForPost" finished-at="2021-09-21T13:44:32 BST" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tony1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Business Analyst]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC001_GET_SingleUser -->
-        <test-method status="PASS" signature="UpdateUser1Patch()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="UpdateUser1Patch" duration-ms="259" started-at="2021-08-01T09:16:06Z" finished-at="2021-08-01T09:16:06Z">
+        </test-method> <!-- dataDrivenPost -->
+        <test-method signature="dataDrivenPost(java.lang.String, java.lang.String)[pri:0, instance:demo.DataDrivenAPIExample@101952da]" started-at="2021-09-21T13:44:32 BST" name="dataDrivenPost" data-provider="DataForPost" finished-at="2021-09-21T13:44:32 BST" duration-ms="311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mary1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Automation Tester]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UpdateUser1Patch -->
-        <test-method status="PASS" signature="UpdateUserPut()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="UpdateUserPut" duration-ms="191" started-at="2021-08-01T09:16:06Z" finished-at="2021-08-01T09:16:07Z">
+        </test-method> <!-- dataDrivenPost -->
+        <test-method signature="dataDrivenPost(java.lang.String, java.lang.String)[pri:0, instance:demo.DataDrivenAPIExample@101952da]" started-at="2021-09-21T13:44:32 BST" name="dataDrivenPost" data-provider="DataForPost" finished-at="2021-09-21T13:44:32 BST" duration-ms="221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Benny1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Project]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UpdateUserPut -->
-        <test-method status="PASS" signature="deleteUser()[pri:0, instance:BDDAutomationAPI.TC2001_Full_Coverage_METHOD@6eebc39e]" name="deleteUser" duration-ms="162" started-at="2021-08-01T09:16:07Z" finished-at="2021-08-01T09:16:07Z">
+        </test-method> <!-- dataDrivenPost -->
+        <test-method signature="test_delete2(int)[pri:0, instance:demo.DataDrivenAPIExample@101952da]" started-at="2021-09-21T13:44:32 BST" name="test_delete2" finished-at="2021-09-21T13:44:32 BST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'userid' is required by @Test on method test_delete2 but has not been marked @Optional or defined
+in C:\Users\bamid\AppData\Local\Temp\testng-eclipse--624282380\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'userid' is required by @Test on method test_delete2 but has not been marked @Optional or defined
+in C:\Users\bamid\AppData\Local\Temp\testng-eclipse--624282380\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteUser -->
-      </class> <!-- BDDAutomationAPI.TC2001_Full_Coverage_METHOD -->
+        </test-method> <!-- test_delete2 -->
+      </class> <!-- demo.DataDrivenAPIExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

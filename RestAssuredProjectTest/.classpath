@@ -18,19 +18,24 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/rest-assured-4.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/poi-5.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/poi-ooxml-5.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/testng-7.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/hamcrest-core-2.2.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/hamcrest-library-2.2.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/java-hamcrest-2.0.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/json-path-4.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/json-schema-validator-4.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/mockito-core-3.7.7.jar"/>
-	<classpathentry kind="lib" path="C:/AmazonKeyPair/xml-path-4.3.3.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_241"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/RESTASSURED Set Up Files/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/RESTASSURED Set Up Files/hamcrest-core-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/RESTASSURED Set Up Files/java-hamcrest-2.0.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/RESTASSURED Set Up Files/hamcrest-library-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/RESTASSURED Set Up Files/json-path-4.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/RESTASSURED Set Up Files/json-schema-validator-4.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/RESTASSURED Set Up Files/rest-assured-4.3.3.jar"/>
+	<classpathentry kind="lib" path="C:/RESTASSURED Set Up Files/testng-7.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/RESTASSURED Set Up Files/xml-path-4.3.3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
