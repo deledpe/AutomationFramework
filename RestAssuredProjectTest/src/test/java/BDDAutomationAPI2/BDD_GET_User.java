@@ -18,6 +18,7 @@ public class BDD_GET_User {
 	void TC2001_GET_SingleUser () {
 				
 	//Response response = RestAssured.get("https://reqres.in/api/users/8");
+	//Response response = RestAssured.get("https://reqres.in/api/users/9");
 		
 		// To direct access RestAssured io without declaring the class, make it static	
 		Response response = get("https://reqres.in/api/users/8");
