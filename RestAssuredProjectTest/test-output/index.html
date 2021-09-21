@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,22 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Allogogate\AppData\Local\Temp\testng-eclipse-555702148\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\bamid\AppData\Local\Temp\testng-eclipse--624282380\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="demo.DataDrivenAPIExample" class="method navigator-link" hash-for-method="test_delete2">test_delete2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,28 +117,23 @@
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="BDDAutomationAPI.TC2001_Full_Coverage_METHOD" hash-for-method="CreateUserPost">CreateUserPost</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="demo.DataDrivenAPIExample" class="method navigator-link" hash-for-method="dataDrivenPost(Kenny1,  Engineer)">dataDrivenPost(Kenny1,  Engineer)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="BDDAutomationAPI.TC2001_Full_Coverage_METHOD" hash-for-method="TC001_GET_SingleUser">TC001_GET_SingleUser</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="demo.DataDrivenAPIExample" class="method navigator-link" hash-for-method="dataDrivenPost(Tony1,  Business Analyst)">dataDrivenPost(Tony1,  Business Analyst)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="BDDAutomationAPI.TC2001_Full_Coverage_METHOD" hash-for-method="UpdateUser1Patch">UpdateUser1Patch</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="demo.DataDrivenAPIExample" class="method navigator-link" hash-for-method="dataDrivenPost(Benny1,  Project)">dataDrivenPost(Benny1,  Project)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="BDDAutomationAPI.TC2001_Full_Coverage_METHOD" hash-for-method="UpdateUserPut">UpdateUserPut</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="BDDAutomationAPI.TC2001_Full_Coverage_METHOD" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="demo.DataDrivenAPIExample" class="method navigator-link" hash-for-method="dataDrivenPost(Mary1,  Automation Tester)">dataDrivenPost(Mary1,  Automation Tester)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -137,45 +148,89 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">BDDAutomationAPI.TC2001_Full_Coverage_METHOD</span>
+              <img src="failed.png"/>
+              <span class="class-name">demo.DataDrivenAPIExample</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateUserPost">
-                  </a> <!-- CreateUserPost -->
-                  <span class="method-name">CreateUserPost</span>
+                  <a name="test_delete2">
+                  </a> <!-- test_delete2 -->
+                  <span class="method-name">test_delete2</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;userid&apos; is required by @Test on method test_delete2 but has not been marked @Optional or defined
+in C:\Users\bamid\AppData\Local\Temp\testng-eclipse--624282380\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:789)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo.DataDrivenAPIExample</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataDrivenPost(Kenny1,  Engineer)">
+                  </a> <!-- dataDrivenPost(Kenny1,  Engineer) -->
+                  <span class="method-name">dataDrivenPost</span>
+                  <span class="parameters">(Kenny1,  Engineer)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC001_GET_SingleUser">
-                  </a> <!-- TC001_GET_SingleUser -->
-                  <span class="method-name">TC001_GET_SingleUser</span>
+                  <a name="dataDrivenPost(Tony1,  Business Analyst)">
+                  </a> <!-- dataDrivenPost(Tony1,  Business Analyst) -->
+                  <span class="method-name">dataDrivenPost</span>
+                  <span class="parameters">(Tony1,  Business Analyst)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="UpdateUser1Patch">
-                  </a> <!-- UpdateUser1Patch -->
-                  <span class="method-name">UpdateUser1Patch</span>
+                  <a name="dataDrivenPost(Benny1,  Project)">
+                  </a> <!-- dataDrivenPost(Benny1,  Project) -->
+                  <span class="method-name">dataDrivenPost</span>
+                  <span class="parameters">(Benny1,  Project)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="UpdateUserPut">
-                  </a> <!-- UpdateUserPut -->
-                  <span class="method-name">UpdateUserPut</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteUser">
-                  </a> <!-- deleteUser -->
-                  <span class="method-name">deleteUser</span>
+                  <a name="dataDrivenPost(Mary1,  Automation Tester)">
+                  </a> <!-- dataDrivenPost(Mary1,  Automation Tester) -->
+                  <span class="method-name">dataDrivenPost</span>
+                  <span class="parameters">(Mary1,  Automation Tester)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,16 +238,16 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Allogogate\AppData\Local\Temp\testng-eclipse-555702148\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\bamid\AppData\Local\Temp\testng-eclipse--624282380\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;BDDAutomationAPI.TC2001_Full_Coverage_METHOD&quot;/&gt;
+      &lt;class name=&quot;demo.DataDrivenAPIExample&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -234,30 +289,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CreateUserPost')
-data.setCell(0, 2, 'BDDAutomationAPI.TC2001_Full_Coverage_METHOD')
-data.setCell(0, 3, 4131);
+data.setCell(0, 1, 'dataDrivenPost')
+data.setCell(0, 2, 'demo.DataDrivenAPIExample')
+data.setCell(0, 3, 5110);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC001_GET_SingleUser')
-data.setCell(1, 2, 'BDDAutomationAPI.TC2001_Full_Coverage_METHOD')
-data.setCell(1, 3, 1539);
+data.setCell(1, 1, 'dataDrivenPost')
+data.setCell(1, 2, 'demo.DataDrivenAPIExample')
+data.setCell(1, 3, 311);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'UpdateUser1Patch')
-data.setCell(2, 2, 'BDDAutomationAPI.TC2001_Full_Coverage_METHOD')
-data.setCell(2, 3, 259);
+data.setCell(2, 1, 'dataDrivenPost')
+data.setCell(2, 2, 'demo.DataDrivenAPIExample')
+data.setCell(2, 3, 252);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'UpdateUserPut')
-data.setCell(3, 2, 'BDDAutomationAPI.TC2001_Full_Coverage_METHOD')
-data.setCell(3, 3, 191);
+data.setCell(3, 1, 'dataDrivenPost')
+data.setCell(3, 2, 'demo.DataDrivenAPIExample')
+data.setCell(3, 3, 221);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'deleteUser')
-data.setCell(4, 2, 'BDDAutomationAPI.TC2001_Full_Coverage_METHOD')
-data.setCell(4, 3, 162);
+data.setCell(4, 1, 'test_delete2')
+data.setCell(4, 2, 'demo.DataDrivenAPIExample')
+data.setCell(4, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -283,30 +338,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">BDDAutomationAPI.TC2001_Full_Coverage_METHOD</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">demo.DataDrivenAPIExample</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">CreateUserPost</span>
+                <span class="method-name">dataDrivenPost(Kenny1,  Engineer)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC001_GET_SingleUser</span>
-                <span class="method-start">4134 ms</span>
+                <span class="method-name">dataDrivenPost(Tony1,  Business Analyst)</span>
+                <span class="method-start">5120 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">UpdateUser1Patch</span>
-                <span class="method-start">5679 ms</span>
+                <span class="method-name">dataDrivenPost(Mary1,  Automation Tester)</span>
+                <span class="method-start">5378 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">UpdateUserPut</span>
-                <span class="method-start">5944 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">deleteUser</span>
-                <span class="method-start">6141 ms</span>
+                <span class="method-name">dataDrivenPost(Benny1,  Project)</span>
+                <span class="method-start">5693 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
