@@ -57,6 +57,7 @@ public class TC2002_POST_CreateUser {
 		    statusCode(204).
 		    log().all();
 		   		
+		System.out.println("Pass");
 		
 	}
 
