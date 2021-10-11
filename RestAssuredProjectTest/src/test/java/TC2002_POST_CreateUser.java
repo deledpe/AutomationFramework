@@ -19,6 +19,7 @@ public class TC2002_POST_CreateUser {
 	      map.put("Job", "Director");
 	      
 	      System.out.println(map);
+	      System.out.println("Pass");
 	      
 	      given().
 	          header("content-type", "application/json").

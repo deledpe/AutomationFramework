@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.DataDrivenAPIExample">
+      <class name="TC001_BBD_POST_METHOD">
         <methods>
-          <include name="test_delete2"/>
+          <include name="POST_CreateNewUser"/>
         </methods>
-      </class> <!-- demo.DataDrivenAPIExample -->
+      </class> <!-- TC001_BBD_POST_METHOD -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
