@@ -1,8 +1,4 @@
 
-# Work on the comment. I have removed the feature file default readme file.
-# Added the code for Logo and page title validation (Tag2)
-
-
 @tag
 Feature: Title of your feature
   I  to use this template for my feature file
