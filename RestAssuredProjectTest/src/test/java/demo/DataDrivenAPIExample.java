@@ -87,7 +87,7 @@ public class DataDrivenAPIExample extends DataForPost{
 		   
 	   }
 		
-//		@Test(dataProvider = "DeleteData")
+		@Test(dataProvider = "DeleteData")
 		public void test_delete (int userid ) {
 			
 			when().
@@ -116,7 +116,9 @@ public class DataDrivenAPIExample extends DataForPost{
 			     
 			then().		
 			    statusCode(200).
-			    log().all();		
+			    log().all();	
+			
+			// Updated API datadriven code.
 	
      }
 }
